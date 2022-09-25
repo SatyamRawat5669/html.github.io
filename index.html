@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="/css/mystyle.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">Satyam Rawat practice website<img src="/Images/heart.jfif" class="heart-img"></h1>
+    </header>
+    <nav class="navbar-all">
+        <ul>
+            <li id="li" class="home"><a href="#">Home</a></li>
+            <li id="li"><a href="#">About</a></li>
+            <li id="li"><a href="#">Bloggs</a></li>
+            <li id="li"><a href="#">store</a></li>
+        </ul>
+        <div class="pika-all">
+            <img src="/Images/drag.gif"  class="pika">
+        </div>
+    </nav>
+    <!-- <div class="pika-all">
+        <img src="/Images/pika.webp"  class="pika">
+    </div> -->
+    <section class="News-section">
+        <h2>News Section</h2>
+        <article >
+        <h3>News Article</h3>
+        <p class="para-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi accusantium sed quis aliquam impedit consectetur unde blanditiis, id, quibusdam sunt perspiciatis, molestiae praesentium dolorem alias! Aperiam saepe veniam ex in nobis fugit repudiandae iusto nihil quibusdam a, consequuntur blanditiis quia, aspernatur voluptas ad quasi ratione voluptate doloremque laudantium temporibus corrupti sunt facere voluptatem. Eligendi, reiciendis cum. Voluptas voluptatibus accusamus quas mollitia optio ullam corrupti repellat harum ratione quae? Nemo.</p>
+        </article>
+       
+    </section>
+    <form action="index.php">
+      
+        Color: <input type="color" name="color" id=""><br>
+        DOB  :  <input type="date" name="date" id="">
+        Date-Time<input type = "datetime-local">
+        E-mail <input type="email" required>
+        Birthday: <input type="month" name="bdaymonth">
+        Quantity(between 1 and 5): <input type="number" name="quantity" min="1" max="10">
+        points: <input type="range" name="points" min="1" max="100000">
+        Telephone: <input type="tel" name="usetel" required>
+            <input type="submit" >
+        
+    </form>
+    <canvas id="mycanvas" width="200" height="100" style="border: 2px solid black;"></canvas>
+    <svg width="100" height="100" style="border: 2px solid red">
+        <circle  cx="50" cy="50" r="40" stroke="lightgreen" stroke-width="1" fill="green"></circle>
+    </svg>
+    <br>
+    <audio controls loop autoplay>
+        <source src="/songs and video/02 Aaja We Mahiya (Imran Khan).mp3 Aaja We Mahiya (Imran Khan).mp3" alt="audio/mp3">
+    </audio>
+    <video controls height="500px" width="500px"autoplay>
+        <source src="/songs and video/videoplayback.mp4">
+    </video>
+   
+    <footer><p>&copy; 2022 Satyam Rawat. all Right Reserved</p></footer>
+    <script>
+        var c =document.getElementById("mycanvas");
+        var sq = c.getContext("2d");
+        sq.moveTo(100,0);
+        sq.lineTo(100, 200);
+        sq.stroke();
+    </script>
+</body>
+
+</html>

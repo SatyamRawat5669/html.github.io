@@ -1,0 +1,104 @@
+#heading{
+    display: block;
+    background-color: lightgreen;
+    text-align: center;
+    
+}
+@font-face {
+    font-family: myfont;
+    src: url('/BungeeSpice-Regular.ttf');
+}
+.navbar-all{
+    list-style: none;
+    display: flex;
+    float: left;
+    border: 2px solid black;
+    width: 100%;
+    text-shadow: 2px 2px 1px blue;  
+    font-family: myfont;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 4px grey;
+    resize: vertical;
+    overflow: auto;
+    transform: translatex(50px);
+    background-image: linear-gradient(to right, white, black);
+
+}
+.navbar-all ul{
+    list-style: none;
+}
+#li{
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+.navbar-all ul li a{
+    text-decoration: none;
+    color: black;
+}
+.News-section{
+   border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.News-section h2{ 
+    border: 2px solid black;
+    display: block;
+    width: 150px
+}
+.News-section h3{ 
+    border: 2px solid black;
+    display: block;
+    width: 150px
+}
+.News-section article{
+    background-color: lightblue;
+    position: relative;
+    left: 30px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.pika{
+    
+    height: 30px;
+    width: 30px;
+    position:relative;
+    /* top: -36px; */
+    right: 450px;
+    animation-name: bhagpikachu;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes bhagpikachu {
+    from{right: 450px}
+    to{right: -1050px}
+}
+.heart-img{
+    border: 2px solid black;
+    
+    height: 40px;
+    width: 40px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.heart-img:hover{
+    transform: scale(2, 2);
+}
+.para-all{
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    column-rule: dashed;
+    column-rule-color: darkgreen}
+.home{
+    transition: transform  2s;
+}
+.home:hover{
+    transform: rotate(360deg);
+}
